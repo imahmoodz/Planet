@@ -1,7 +1,19 @@
 {
   "author": "Mahmood Zamani",
-  "name": "WebFramework",
-  "version": "0.0.1",
+  "name": "Planet",
+  "description": "Planet is a Simple Framework for web artisans.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imahmoodz/Planet.git"
+  },
+  "keywords": [
+    "css",
+    "Framework",
+    "html",
+    "css Framework"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "^1.0.0",

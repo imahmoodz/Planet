@@ -1,0 +1,47 @@
+//Button variants
+@mixin button-var($background,$color,$border) {
+  background-color: $background;
+  border: solid 1px $border;
+  box-shadow: inset 0px 1px 0px $border;
+  color: $color;
+  padding: 7px 10px;
+  &:active,
+  &.active {
+    box-shadow: inset 0px 23px 49px darken($background, 20%);
+  }
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 11%);
+        box-shadow: inset 0px 1px 0px darken($border, 11%);
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+  >a.btn.disabled{
+    pointer-events: none;
+  }
+  > a{
+    color:$color;
+  }
+}
+@mixin button-size($size) {
+  //if size 1 = large, size 2 = medium, 3 = small
+  @if($size == 1){
+    padding: 12px 19px;
+    font-size: 20px;
+  }@else if($size == 2){
+    padding: 7px 10px;
+  }@else if($size == 3){
+    padding: 3px 10px;
+    font-size: 13px;
+  }
+
+}

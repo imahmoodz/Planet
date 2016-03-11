@@ -1,7 +1,14 @@
 //Planet CSS Framework
 @import "ـvariable";
+//buttons
+@import "mixins/_buttons";
+@import "_buttons";
 body {
-  background: $bg;
+  background: $bg-color;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
+}
+a{
+  color: $base-text-color;
+  text-decoration: none;
 }

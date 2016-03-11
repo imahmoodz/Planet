@@ -1,0 +1,56 @@
+//Buttons
+.btn{
+  display: inline-block;
+  font-weight: $font-weight;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  border: solid 1px transparent;
+  border-radius: $border-radius;
+}
+
+
+
+//buttons
+.btn-default{
+  @include button-var($btn-default-bg,$btn-default-color,$btn-default-border);
+}
+//button green
+.btn-green{
+  @include button-var($btn-green-bg,$btn-green-color,$btn-green-border);
+}
+//button red
+.btn-red{
+  @include button-var($btn-red-bg,$btn-red-color,$btn-red-border);
+}
+//button blue
+.btn-blue{
+  @include button-var($btn-blue-bg,$btn-blue-color,$btn-blue-border);
+}
+//button purple
+.btn-purple{
+  @include button-var($btn-purple-bg,$btn-purple-color,$btn-purple-border);
+}
+//button orange
+.btn-orange{
+  @include button-var($btn-orange-bg,$btn-orange-color,$btn-orange-border);
+}
+
+
+//Large Button
+.btn-large{
+  @include button-size(1);
+}
+//Medium Button
+.btn-medium{
+  @include button-size(2);
+}
+//Small Button
+.btn-small{
+  @include button-size(3);
+}
+.btn-block{
+  display: block;
+  width: 100%;
+}

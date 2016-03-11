@@ -3,5 +3,3 @@ dist
 .tmp
 .sass-cache
 robots.txt
-.bowerrc
-.gitignore~
